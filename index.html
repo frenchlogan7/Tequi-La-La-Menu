@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tequi-La-La Menu</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #1a0a00;
+      color: #f5deb3;
+      font-family: 'Georgia', serif;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      color: #ffcc00;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #d4a84b;
+      margin-top: 8px;
+      letter-spacing: 2px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 2px solid #ffcc00;
+      width: 60%;
+      margin: 24px auto;
+      opacity: 0.5;
+    }
+
+    .menu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .menu-section {
+      background-color: #2b1200;
+      border: 1px solid #7a4a00;
+      border-radius: 8px;
+      padding: 28px 24px;
+    }
+
+    .menu-section h2 {
+      font-size: 1.6rem;
+      color: #ffcc00;
+      text-align: center;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      border-bottom: 1px solid #7a4a00;
+      padding-bottom: 12px;
+    }
+
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 8px 0;
+      border-bottom: 1px dotted #4a2a00;
+    }
+
+    .menu-item:last-child {
+      border-bottom: none;
+    }
+
+    .item-name {
+      font-size: 1rem;
+      color: #f5deb3;
+    }
+
+    .item-price {
+      font-size: 1rem;
+      color: #ffcc00;
+      font-weight: bold;
+      white-space: nowrap;
+      margin-left: 12px;
+    }
+
+    .specials-section {
+      background-color: #1f0d2e;
+      border-color: #9b59b6;
+    }
+
+    .specials-section h2 {
+      color: #d9a7ff;
+      border-color: #9b59b6;
+    }
+
+    .specials-section .item-price {
+      color: #d9a7ff;
+    }
+
+    .specials-section .menu-item {
+      border-bottom-color: #4a2a6a;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #7a5a30;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Tequi-La-La</h1>
+    <p>Bar Menu</p>
+    <hr class="divider" />
+  </header>
+
+  <div class="menu-grid">
+    <!-- Food -->
+    <section class="menu-section">
+      <h2>Food</h2>
+      <div class="menu-item"><span class="item-name">Cherry</span><span class="item-price">$8</span></div>
+      <div class="menu-item"><span class="item-name">Lemon</span><span class="item-price">$12</span></div>
+      <div class="menu-item"><span class="item-name">Lime</span><span class="item-price">$12</span></div>
+      <div class="menu-item"><span class="item-name">Chili Peppers</span><span class="item-price">$12</span></div>
+      <div class="menu-item"><span class="item-name">Orange</span><span class="item-price">$16</span></div>
+      <div class="menu-item"><span class="item-name">Eggs</span><span class="item-price">$16</span></div>
+      <div class="menu-item"><span class="item-name">Skittles</span><span class="item-price">$20</span></div>
+      <div class="menu-item"><span class="item-name">Coconut</span><span class="item-price">$20</span></div>
+      <div class="menu-item"><span class="item-name">Nachos</span><span class="item-price">$20</span></div>
+      <div class="menu-item"><span class="item-name">Hot Dog</span><span class="item-price">$20</span></div>
+      <div class="menu-item"><span class="item-name">Salted Peanuts</span><span class="item-price">$24</span></div>
+      <div class="menu-item"><span class="item-name">Olives</span><span class="item-price">$28</span></div>
+      <div class="menu-item"><span class="item-name">Pineapple</span><span class="item-price">$28</span></div>
+      <div class="menu-item"><span class="item-name">Ham Sandwich</span><span class="item-price">$32</span></div>
+      <div class="menu-item"><span class="item-name">S'mores</span><span class="item-price">$40</span></div>
+    </section>
+
+    <!-- Drinks -->
+    <section class="menu-section">
+      <h2>Drinks</h2>
+      <div class="menu-item"><span class="item-name">Water</span><span class="item-price">$8</span></div>
+      <div class="menu-item"><span class="item-name">Koka</span><span class="item-price">$20</span></div>
+      <div class="menu-item"><span class="item-name">Frezzi</span><span class="item-price">$20</span></div>
+      <div class="menu-item"><span class="item-name">Sprunk</span><span class="item-price">$20</span></div>
+      <div class="menu-item"><span class="item-name">Tanga</span><span class="item-price">$20</span></div>
+      <div class="menu-item"><span class="item-name">Beer</span><span class="item-price">$24</span></div>
+      <div class="menu-item"><span class="item-name">Cider</span><span class="item-price">$36</span></div>
+      <div class="menu-item"><span class="item-name">Tequila</span><span class="item-price">$50</span></div>
+      <div class="menu-item"><span class="item-name">Pigeon Milk</span><span class="item-price">$64</span></div>
+      <div class="menu-item"><span class="item-name">Vodka</span><span class="item-price">$100</span></div>
+      <div class="menu-item"><span class="item-name">Absinthe</span><span class="item-price">$104</span></div>
+      <div class="menu-item"><span class="item-name">Whiskey</span><span class="item-price">$130</span></div>
+      <div class="menu-item"><span class="item-name">Rum</span><span class="item-price">$156</span></div>
+      <div class="menu-item"><span class="item-name">Almond Milk</span><span class="item-price">$156</span></div>
+    </section>
+
+    <!-- Specials -->
+    <section class="menu-section specials-section">
+      <h2>Specials</h2>
+      <div class="menu-item"><span class="item-name">Eggoholic Smoothie</span><span class="item-price">$100</span></div>
+      <div class="menu-item"><span class="item-name">Lunch Bundle</span><span class="item-price">$200</span></div>
+      <div class="menu-item"><span class="item-name">Glizzy Bundle</span><span class="item-price">$300</span></div>
+      <div class="menu-item"><span class="item-name">Not Cho Bundle</span><span class="item-price">$400</span></div>
+      <div class="menu-item"><span class="item-name">Fuck-U-Up Smoothie</span><span class="item-price">$500</span></div>
+      <div class="menu-item"><span class="item-name">Variety Bundle</span><span class="item-price">$1,000</span></div>
+      <div class="menu-item"><span class="item-name">EXT-Fck-U-Up Smoothie</span><span class="item-price">$3,000</span></div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; Tequi-La-La &mdash; Drink responsibly.</p>
+  </footer>
+</body>
+</html>
